@@ -1,0 +1,11 @@
+{
+  "define": {
+    "message" : "{'type': 'Bety'}"
+  },
+  "rules": [
+    {
+      "command" : "echo " + message + " " + BETYDB_URL + ":" + BETYDB_KEY + " > output_intermediate/input.geojson",
+      "outputs" : [ "output_intermediate/input.geojson" ]
+    }
+  ]
+}

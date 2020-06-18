@@ -1,0 +1,5 @@
+{
+  "input_workflow": "workflow-input-geojson.jx",
+  "input_workflow_args": {"input_filename": "input/input-provided.geojson"},
+  "input_workflow_inputs": [ "input/input-provided.geojson" ]
+}

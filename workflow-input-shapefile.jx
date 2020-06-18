@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "command" : "cp " + input_filename + " output_intermediate/input.geojson",
+      "inputs" : [ input_filename ],
+      "outputs" : [ "output_intermediate/input.geojson" ]
+    }
+  ]
+}

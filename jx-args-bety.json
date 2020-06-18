@@ -1,0 +1,9 @@
+{
+  "input_workflow": "workflow-input-bety.jx",
+  "input_workflow_args":
+  {
+    "BETYDB_URL": "https://terraref.ncsa.illinois.edu/bety/",
+    "BETYDB_KEY": "9999999999999999999999999999999999999999"
+  },
+  "input_workflow_inputs": [ ]
+}

@@ -1,0 +1,25 @@
+{
+  "define": {
+    "plotclip_message" : "Do something with input.geojson",
+    "final_message" : "Do something with plotclip.txt"
+  },
+
+  "rules": [
+    {
+      "workflow" : input_workflow,
+      "args" : input_workflow_args,
+      "inputs" : input_workflow_inputs,
+      "outputs" : [ "output_intermediate/input.geojson" ]
+    },
+    {
+      "command" : "echo " + plotclip_message + " > output_intermediate/plotclip.txt && cat output_intermediate/input.geojson >> output_intermediate/plotclip.txt",
+      "inputs" : [ "output_intermediate/input.geojson" ],
+      "outputs" : [ "output_intermediate/plotclip.txt"]
+    },
+    {
+      "command" : "echo " + final_message + " > output_final/final-results.txt && cat output_intermediate/plotclip.txt >> output_final/final-results.txt",
+      "inputs" : [ "output_intermediate/plotclip.txt"],
+      "outputs" : [ "output_final/final-results.txt" ]
+    }
+  ]
+}

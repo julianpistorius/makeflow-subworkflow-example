@@ -1,0 +1,5 @@
+{
+  "input_workflow": "workflow-input-shapefile.jx",
+  "input_workflow_args": {"input_filename": "input/input.shp"},
+  "input_workflow_inputs": [ "input/input.shp" ]
+}
